@@ -1,0 +1,140 @@
+2025-10-26 20:28:22,986 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 20:28:22,987 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 20:28:22,987 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 20:28:24,292 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 20:28:24,293 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 20:28:24,295 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 20:29:51,840 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 20:29:51,841 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 20:29:51,841 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 20:29:52,858 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 20:29:52,860 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 20:29:52,862 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 20:30:53,709 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 20:30:53,710 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 20:30:53,710 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 20:30:54,814 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 20:30:54,815 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 20:30:54,818 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 20:36:43,882 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 20:36:43,883 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 20:36:43,883 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 20:36:44,945 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 20:36:44,945 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 20:36:44,949 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 20:38:32,451 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 20:38:32,451 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 20:38:32,452 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 20:38:33,554 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 20:38:33,655 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 20:38:33,657 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 20:40:54,675 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 20:40:54,676 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 20:40:54,677 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 20:40:55,758 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 20:40:55,758 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 20:40:55,760 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 20:43:08,375 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 20:43:08,376 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 20:43:08,377 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 20:43:09,729 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 20:43:09,730 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 20:43:09,731 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 20:44:06,611 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 20:44:06,612 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 20:44:06,612 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 20:44:07,582 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 20:44:07,583 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 20:44:07,585 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 20:44:39,383 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 20:44:39,384 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 20:44:39,384 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 20:44:40,492 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 20:44:40,493 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 20:44:40,495 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 20:46:41,961 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 20:46:41,962 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 20:46:41,963 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 20:46:42,979 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 20:46:42,980 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 20:46:42,981 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 20:47:03,357 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 20:47:03,357 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 20:47:03,358 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 20:47:04,439 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 20:47:04,440 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 20:47:04,441 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 21:04:43,316 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 21:04:43,317 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 21:04:43,317 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 21:04:44,668 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 21:04:44,668 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 21:04:44,669 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 21:10:39,998 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 21:10:39,999 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 21:10:40,000 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 21:10:41,054 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 21:10:41,055 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 21:10:41,056 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
+2025-10-26 21:12:54,675 - amadeus_client - INFO - __init__:9 - Initializing AmadeusClient
+2025-10-26 21:12:54,676 - amadeus_client - INFO - get_access_token:17 - Getting access token from Amadeus API
+2025-10-26 21:12:54,677 - amadeus_client - INFO - log_function_call:39 - Calling get_access_token with params: {
+  "client_id": "LyIf51V7..."
+}
+2025-10-26 21:12:55,771 - amadeus_client - INFO - log_function_result:44 - get_access_token completed successfully. Result: {
+  "token_length": 28
+}
+2025-10-26 21:12:55,772 - amadeus_client - INFO - get_access_token:37 - Access token obtained successfully
+2025-10-26 21:12:55,774 - amadeus_client - INFO - __init__:14 - AmadeusClient initialized successfully
