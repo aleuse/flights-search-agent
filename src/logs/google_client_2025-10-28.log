@@ -1,0 +1,227 @@
+2025-10-28 19:27:28,320 - google_client - INFO - __init__:9 - Initializing GoogleClient
+2025-10-28 19:27:29,666 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:27:30,086 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C70A2E10> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:27:58,730 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:27:58,733 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C601F490> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:28:22,215 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:28:22,217 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C7083410> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:28:23,799 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:28:23,801 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C75B2B90> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:28:26,536 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:28:26,538 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C75D9650> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:28:29,686 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:28:29,689 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C70A38D0> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:28:32,783 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:28:32,786 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C7010590> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:28:34,815 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:28:34,817 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C759C990> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:28:35,696 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:28:35,698 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C759FCD0> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:28:42,399 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:28:42,402 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C759CAD0> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:28:45,373 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:28:45,375 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C7013E90> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:28:47,518 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:28:47,521 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x00000216C7602590> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:30:14,386 - google_client - INFO - __init__:9 - Initializing GoogleClient
+2025-10-28 19:30:15,322 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:30:15,335 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002120A0FBA10> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:30:17,963 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:30:17,966 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002120A604A50> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:30:21,609 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:30:21,611 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002120A619D10> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:30:24,557 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:30:24,560 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002120A0ED610> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:30:26,861 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:30:26,863 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002120A0C24D0> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:30:28,972 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:30:28,975 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002120A08A310> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:30:30,175 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:30:30,178 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002120A664910> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:30:35,991 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:30:35,996 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002120A088A90> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:30:39,153 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:30:39,156 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002120A0EC050> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:30:40,751 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:30:40,754 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002120A0EFB10> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:48:07,304 - google_client - INFO - __init__:9 - Initializing GoogleClient
+2025-10-28 19:48:08,673 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:48:08,749 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002285903ACD0> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:48:10,903 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:48:10,905 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x0000022858F73950> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:48:12,769 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:48:12,772 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x0000022858FDD450> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:48:16,044 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:48:16,046 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002285A4F6890> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:48:18,219 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:48:18,222 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x0000022858F7C610> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:48:19,887 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:48:19,890 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x0000022858FCE1D0> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:48:21,044 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:48:21,792 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002285903BA50> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:48:27,867 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:48:27,869 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002285A4BF810> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:48:30,482 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:48:30,485 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x0000022858F71910> default_metadata=() model_kwargs={}"
+}
+2025-10-28 19:48:32,259 - google_client - INFO - log_function_call:39 - Calling get_llm with params: {
+  "temperature": 0.0,
+  "model": "gemini-2.5-flash"
+}
+2025-10-28 19:48:32,261 - google_client - INFO - log_function_result:44 - get_llm completed successfully. Result: {
+  "llm": "model='models/gemini-2.5-flash' google_api_key=SecretStr('**********') temperature=0.0 client=<google.ai.generativelanguage_v1beta.services.generative_service.client.GenerativeServiceClient object at 0x000002285903BC10> default_metadata=() model_kwargs={}"
+}

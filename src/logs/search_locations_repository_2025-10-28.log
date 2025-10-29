@@ -1,0 +1,36 @@
+2025-10-28 19:28:28,346 - search_locations_repository - INFO - log_function_call:39 - Calling search_locations with params: {
+  "city": "Miami"
+}
+2025-10-28 19:28:29,683 - search_locations_repository - INFO - log_function_result:44 - search_locations completed successfully. Result: {
+  "locations_count": 3
+}
+2025-10-28 19:28:31,448 - search_locations_repository - INFO - log_function_call:39 - Calling search_locations with params: {
+  "city": "Los Angeles"
+}
+2025-10-28 19:28:32,779 - search_locations_repository - INFO - log_function_result:44 - search_locations completed successfully. Result: {
+  "locations_count": 2
+}
+2025-10-28 19:30:23,415 - search_locations_repository - INFO - log_function_call:39 - Calling search_locations with params: {
+  "city": "Miami"
+}
+2025-10-28 19:30:24,505 - search_locations_repository - INFO - log_function_result:44 - search_locations completed successfully. Result: {
+  "locations_count": 3
+}
+2025-10-28 19:30:25,711 - search_locations_repository - INFO - log_function_call:39 - Calling search_locations with params: {
+  "city": "Los Angeles"
+}
+2025-10-28 19:30:26,857 - search_locations_repository - INFO - log_function_result:44 - search_locations completed successfully. Result: {
+  "locations_count": 2
+}
+2025-10-28 19:48:14,652 - search_locations_repository - INFO - log_function_call:39 - Calling search_locations with params: {
+  "city": "Miami"
+}
+2025-10-28 19:48:15,984 - search_locations_repository - INFO - log_function_result:44 - search_locations completed successfully. Result: {
+  "locations_count": 3
+}
+2025-10-28 19:48:17,249 - search_locations_repository - INFO - log_function_call:39 - Calling search_locations with params: {
+  "city": "Los Angeles"
+}
+2025-10-28 19:48:18,215 - search_locations_repository - INFO - log_function_result:44 - search_locations completed successfully. Result: {
+  "locations_count": 2
+}

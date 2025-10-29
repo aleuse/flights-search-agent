@@ -1,0 +1,542 @@
+2025-10-27 19:55:24,486 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to True.- If *any* of the four pieces of information are missing, set `is_valid` to False and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 19:55:24,486 - google_service - ERROR - log_function_error:51 - generate_response failed with error: 'LLMChainRequest' object has no attribute 'model' | Params: {"prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to True.- If *any* of the four pieces of information are missing, set `is_valid` to False and provide a `reason` explaining *exactly* what is missing.", "tools": null, "structured_output": "<class 'travel_agent.domain.entities.IsValid'>", "temperature": 0.0}
+Traceback (most recent call last):
+  File "D:\BEYONDDATA\PROYECTOS\FlightSearchAgent\src\llms\infrastructure\google_service.py", line 21, in get_chain
+    llm = self.client.get_llm(temperature=request.temperature, model=request.model)
+                                                                     ^^^^^^^^^^^^^
+AttributeError: 'LLMChainRequest' object has no attribute 'model'
+2025-10-27 19:57:07,688 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to True.- If *any* of the four pieces of information are missing, set `is_valid` to False and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 19:57:08,089 - google_service - ERROR - log_function_error:51 - generate_response failed with error: jinja2 not installed, which is needed to use the jinja2_formatter. Please install it with `pip install jinja2`. | Params: {"prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to True.- If *any* of the four pieces of information are missing, set `is_valid` to False and provide a `reason` explaining *exactly* what is missing.", "tools": null, "structured_output": "<class 'travel_agent.domain.entities.IsValid'>", "temperature": 0.0}
+Traceback (most recent call last):
+  File "D:\BEYONDDATA\PROYECTOS\FlightSearchAgent\src\llms\infrastructure\google_service.py", line 30, in get_chain
+    prompt = ChatPromptTemplate.from_messages([
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BEYONDDATA\PROYECTOS\FlightSearchAgent\.venv\Lib\site-packages\langchain_core\prompts\chat.py", line 1136, in from_messages
+    return cls(messages, template_format=template_format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BEYONDDATA\PROYECTOS\FlightSearchAgent\.venv\Lib\site-packages\langchain_core\prompts\chat.py", line 945, in __init__
+    messages_ = [
+                ^
+  File "D:\BEYONDDATA\PROYECTOS\FlightSearchAgent\.venv\Lib\site-packages\langchain_core\prompts\chat.py", line 946, in <listcomp>
+    _convert_to_message_template(message, template_format)
+  File "D:\BEYONDDATA\PROYECTOS\FlightSearchAgent\.venv\Lib\site-packages\langchain_core\prompts\chat.py", line 1418, in _convert_to_message_template
+    message_ = _create_template_from_message_type(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BEYONDDATA\PROYECTOS\FlightSearchAgent\.venv\Lib\site-packages\langchain_core\prompts\chat.py", line 1325, in _create_template_from_message_type
+    message = SystemMessagePromptTemplate.from_template(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BEYONDDATA\PROYECTOS\FlightSearchAgent\.venv\Lib\site-packages\langchain_core\prompts\chat.py", line 426, in from_template
+    prompt: StringPromptTemplate | list = PromptTemplate.from_template(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BEYONDDATA\PROYECTOS\FlightSearchAgent\.venv\Lib\site-packages\langchain_core\prompts\prompt.py", line 289, in from_template
+    input_variables = get_template_variables(template, template_format)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BEYONDDATA\PROYECTOS\FlightSearchAgent\.venv\Lib\site-packages\langchain_core\prompts\string.py", line 263, in get_template_variables
+    input_variables = _get_jinja2_variables_from_template(template)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BEYONDDATA\PROYECTOS\FlightSearchAgent\.venv\Lib\site-packages\langchain_core\prompts\string.py", line 103, in _get_jinja2_variables_from_template
+    raise ImportError(msg)
+ImportError: jinja2 not installed, which is needed to use the jinja2_formatter. Please install it with `pip install jinja2`.
+2025-10-27 19:59:59,277 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to True.- If *any* of the four pieces of information are missing, set `is_valid` to False and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:00:59,262 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to True.- If *any* of the four pieces of information are missing, set `is_valid` to False and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:02:01,604 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to True.- If *any* of the four pieces of information are missing, set `is_valid` to False and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:03:04,916 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to True.- If *any* of the four pieces of information are missing, set `is_valid` to False and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:06:16,987 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:09:38,464 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:10:11,215 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:41:03,036 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:41:56,058 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:41:58,313 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a precise information extraction agent. Your task is to extract key travel details from the user's query: {{user_query}}.\nScan the user's messages and extract the following four pieces of information:\n1. `origin`: The origin city or location (e.g., 'New York', 'Medellin').\n2. `destination`: The destination city or location (e.g., 'Paris', 'Tokyo').\n3. `start_date`: The departure date, formatted as YYYY-MM-DD.\n4. `end_date`: The return date, formatted as YYYY-MM-DD.\nA **budget** is optional and not required for extraction.\nWhen you have all the information, you must output it *only* in the `QueryExtractedInfo` structured format. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.QueryExtractedInfo'>",
+  "temperature": 0.0
+}
+2025-10-27 20:45:13,849 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:45:16,072 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a precise information extraction agent. Your task is to extract key travel details from the user's query: {{user_query}}.\nScan the user's messages and extract the following four pieces of information:\n1. `origin`: The origin city or location (e.g., 'New York', 'Medellin').\n2. `destination`: The destination city or location (e.g., 'Paris', 'Tokyo').\n3. `start_date`: The departure date, formatted as YYYY-MM-DD.\n4. `end_date`: The return date, formatted as YYYY-MM-DD.\nA **budget** is optional and not required for extraction.\nWhen you have all the information, you must output it *only* in the `QueryExtractedInfo` structured format. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.QueryExtractedInfo'>",
+  "temperature": 0.0
+}
+2025-10-27 20:46:37,542 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:46:39,674 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a precise information extraction agent. Your task is to extract key travel details from the user's query: {{user_query}}.\nScan the user's messages and extract the following four pieces of information:\n1. `origin`: The origin city or location (e.g., 'New York', 'Medellin').\n2. `destination`: The destination city or location (e.g., 'Paris', 'Tokyo').\n3. `start_date`: The departure date, formatted as YYYY-MM-DD.\n4. `end_date`: The return date, formatted as YYYY-MM-DD.\nA **budget** is optional and not required for extraction.\nWhen you have all the information, you must output it *only* in the `QueryExtractedInfo` structured format. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.QueryExtractedInfo'>",
+  "temperature": 0.0
+}
+2025-10-27 20:46:42,165 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x000001A2D38BAE50>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 20:46:43,644 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code processor. Your task is to process the location codes for the origin and destination.\n1. Use the origin and destination codes from the results of the location_search tool: {{origin_code}} - {{destination_code}}.\n2. Output the results in the `LocationSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'locations.domain.location_entities.LocationSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 20:48:33,294 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 20:48:35,479 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a precise information extraction agent. Your task is to extract key travel details from the user's query: {{user_query}}.\nScan the user's messages and extract the following four pieces of information:\n1. `origin`: The origin city or location (e.g., 'New York', 'Medellin').\n2. `destination`: The destination city or location (e.g., 'Paris', 'Tokyo').\n3. `start_date`: The departure date, formatted as YYYY-MM-DD.\n4. `end_date`: The return date, formatted as YYYY-MM-DD.\nA **budget** is optional and not required for extraction.\nWhen you have all the information, you must output it *only* in the `QueryExtractedInfo` structured format. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.QueryExtractedInfo'>",
+  "temperature": 0.0
+}
+2025-10-27 20:48:37,465 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x0000021DB17C9090>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 20:48:38,969 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code processor. Your task is to process the location codes for the origin and destination.\n1. Use the origin and destination codes from the results of the location_search tool: {{origin_code}} - {{destination_code}}.\n2. Output the results in the `LocationSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'locations.domain.location_entities.LocationSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 20:48:41,663 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x0000021DB1837E50>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 20:48:43,895 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a flight search result processor. Your task is to process the flight search results.\n1. Use the flight_results to create the proposal: {{flight_results}}.\n2. Output the results in the `FlightSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'flights.domain.flights_entities.FlightSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 20:48:46,920 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a senior travel agent. Your task is to create a comprehensive, friendly, and clear travel proposal for the user.\nYou must use the following information to create the proposal:\n- Origin: {{origin}}\n- Destination: {{destination}}\n- Dates: {{start_date}} - {{end_date}}\n- Budget: {{budget}}\n- Flight Results: {{flight_results}}\n**CRITICAL INSTRUCTIONS:**\n1. Start with a friendly greeting.\n2. Clearly summarize the best flight option(s) found, including airline, price, and key times.\n3. Calculate a total estimated cost.\n4. Compare this total cost to the user's budget (if one was provided) and state if it's within, over, or under budget.\n5. If no results were found for flights, you *must* state this clearly.\n6. Conclude by presenting the proposal clearly. **Do not** ask the user for confirmation, just state the proposal.\n",
+  "tools": null,
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:10:41,624 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 21:10:44,274 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a precise information extraction agent. Your task is to extract key travel details from the user's query: {{user_query}}.\nScan the user's messages and extract the following four pieces of information:\n1. `origin`: The origin city or location (e.g., 'New York', 'Medellin').\n2. `destination`: The destination city or location (e.g., 'Paris', 'Tokyo').\n3. `start_date`: The departure date, formatted as YYYY-MM-DD.\n4. `end_date`: The return date, formatted as YYYY-MM-DD.\nA **budget** is optional and not required for extraction.\nWhen you have all the information, you must output it *only* in the `QueryExtractedInfo` structured format. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.QueryExtractedInfo'>",
+  "temperature": 0.0
+}
+2025-10-27 21:10:46,420 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x000001D463B7FD10>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:10:47,644 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code processor. Your task is to process the location codes for the origin and destination.\n1. Use the origin and destination codes from the results of the location_search tool: {{origin_code}} - {{destination_code}}.\n2. Output the results in the `LocationSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'locations.domain.location_entities.LocationSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 21:10:49,098 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x000001D463B47E50>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:10:51,576 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a flight search result processor. Your task is to process the flight search results.\n1. Use the flight_results to create the proposal: {{flight_results}}.\n2. Output the results in the `FlightSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'flights.domain.flights_entities.FlightSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 21:11:02,751 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a senior travel agent. Your task is to create a comprehensive, friendly, and clear travel proposal for the user.\nYou must use the following information to create the proposal:\n- Origin: {{origin}}\n- Destination: {{destination}}\n- Dates: {{start_date}} - {{end_date}}\n- Budget: {{budget}}\n- Flight Results: {{flight_results}}\n**CRITICAL INSTRUCTIONS:**\n1. Start with a friendly greeting.\n2. Clearly summarize the best flight option(s) found, including airline, price, and key times.\n3. Calculate a total estimated cost.\n4. Compare this total cost to the user's budget (if one was provided) and state if it's within, over, or under budget.\n5. If no results were found for flights, you *must* state this clearly.\n6. Conclude by presenting the proposal clearly. **Do not** ask the user for confirmation, just state the proposal.\n",
+  "tools": null,
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:19:06,985 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 21:19:07,054 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:19:09,273 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a precise information extraction agent. Your task is to extract key travel details from the user's query: {{user_query}}.\nScan the user's messages and extract the following four pieces of information:\n1. `origin`: The origin city or location (e.g., 'New York', 'Medellin').\n2. `destination`: The destination city or location (e.g., 'Paris', 'Tokyo').\n3. `start_date`: The departure date, formatted as YYYY-MM-DD.\n4. `end_date`: The return date, formatted as YYYY-MM-DD.\nA **budget** is optional and not required for extraction.\nWhen you have all the information, you must output it *only* in the `QueryExtractedInfo` structured format. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.QueryExtractedInfo'>",
+  "temperature": 0.0
+}
+2025-10-27 21:19:09,277 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:19:11,456 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x0000021A4823CA10>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:19:11,460 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:19:13,156 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code processor. Your task is to process the location codes for the origin and destination.\n1. Use the origin and destination codes from the results of the location_search tool: {{origin_code}} - {{destination_code}}.\n2. Output the results in the `LocationSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'locations.domain.location_entities.LocationSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 21:19:13,206 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:19:14,550 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x0000021A48276D90>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:19:14,557 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:19:16,715 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a flight search result processor. Your task is to process the flight search results.\n1. Use the flight_results to create the proposal: {{flight_results}}.\n2. Output the results in the `FlightSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'flights.domain.flights_entities.FlightSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 21:19:16,718 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:19:19,034 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a senior travel agent. Your task is to create a comprehensive, friendly, and clear travel proposal for the user.\nYou must use the following information to create the proposal:\n- Origin: {{origin}}\n- Destination: {{destination}}\n- Dates: {{start_date}} - {{end_date}}\n- Budget: {{budget}}\n- Flight Results: {{flight_results}}\n**CRITICAL INSTRUCTIONS:**\n1. Start with a friendly greeting.\n2. Clearly summarize the best flight option(s) found, including airline, price, and key times.\n3. Calculate a total estimated cost.\n4. Compare this total cost to the user's budget (if one was provided) and state if it's within, over, or under budget.\n5. If no results were found for flights, you *must* state this clearly.\n6. Conclude by presenting the proposal clearly. **Do not** ask the user for confirmation, just state the proposal.\n",
+  "tools": null,
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:26:45,278 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 21:26:45,296 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:26:47,313 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a precise information extraction agent. Your task is to extract key travel details from the user's query: {{user_query}}.\nScan the user's messages and extract the following four pieces of information:\n1. `origin`: The origin city or location (e.g., 'New York', 'Medellin').\n2. `destination`: The destination city or location (e.g., 'Paris', 'Tokyo').\n3. `start_date`: The departure date, formatted as YYYY-MM-DD.\n4. `end_date`: The return date, formatted as YYYY-MM-DD.\nA **budget** is optional and not required for extraction.\nWhen you have all the information, you must output it *only* in the `QueryExtractedInfo` structured format. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.QueryExtractedInfo'>",
+  "temperature": 0.0
+}
+2025-10-27 21:26:47,319 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:26:49,538 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x0000018AC4746850>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:26:49,543 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:26:52,308 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x0000018AC4746850>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:26:52,313 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:26:56,072 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x0000018AC4746850>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:26:56,078 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:26:58,294 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code processor. Your task is to process the location codes for the origin and destination.\n1. Use the origin and destination codes from the results of the location_search tool: {{origin_code}} - {{destination_code}}.\n2. Output the results in the `LocationSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'locations.domain.location_entities.LocationSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 21:26:58,300 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:26:59,661 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x0000018AC4795590>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:26:59,667 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:27:01,377 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x0000018AC4795590>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:27:01,383 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:27:05,826 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x0000018AC4795590>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:27:05,833 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:27:08,026 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x0000018AC4795590>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:27:08,031 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:27:13,219 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x0000018AC4795590>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:27:13,226 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:29:24,141 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 21:29:24,160 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:29:25,865 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a precise information extraction agent. Your task is to extract key travel details from the user's query: {{user_query}}.\nScan the user's messages and extract the following four pieces of information:\n1. `origin`: The origin city or location (e.g., 'New York', 'Medellin').\n2. `destination`: The destination city or location (e.g., 'Paris', 'Tokyo').\n3. `start_date`: The departure date, formatted as YYYY-MM-DD.\n4. `end_date`: The return date, formatted as YYYY-MM-DD.\nA **budget** is optional and not required for extraction.\nWhen you have all the information, you must output it *only* in the `QueryExtractedInfo` structured format. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.QueryExtractedInfo'>",
+  "temperature": 0.0
+}
+2025-10-27 21:29:25,869 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:29:27,919 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x000001965D8EAD90>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:29:27,923 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:29:31,153 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x000001965D8EAD90>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:29:31,158 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:29:33,832 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x000001965D8EAD90>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:29:33,838 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:29:36,250 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code processor. Your task is to process the location codes for the origin and destination.\n1. Use the origin and destination codes from the results of the location_search tool: {{origin_code}} - {{destination_code}}.\n2. Output the results in the `LocationSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'locations.domain.location_entities.LocationSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 21:29:36,257 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:29:37,536 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x000001965D946FD0>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:29:37,542 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:29:42,775 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x000001965D946FD0>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:29:42,780 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:29:44,787 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a flight search result processor. Your task is to process the flight search results.\n1. Use the flight_results to create the proposal: {{flight_results}}.\n2. Output the results in the `FlightSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'flights.domain.flights_entities.FlightSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 21:29:44,790 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:29:46,308 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a senior travel agent. Your task is to create a comprehensive, friendly, and clear travel proposal for the user.\nYou must use the following information to create the proposal:\n- Origin: {{origin}}\n- Destination: {{destination}}\n- Dates: {{start_date}} - {{end_date}}\n- Budget: {{budget}}\n- Flight Results: {{flight_results}}\n**CRITICAL INSTRUCTIONS:**\n1. Start with a friendly greeting.\n2. Clearly summarize the best flight option(s) found, including airline, price, and key times.\n3. Calculate a total estimated cost.\n4. Compare this total cost to the user's budget (if one was provided) and state if it's within, over, or under budget.\n5. If no results were found for flights, you *must* state this clearly.\n6. Conclude by presenting the proposal clearly. **Do not** ask the user for confirmation, just state the proposal.\n",
+  "tools": null,
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:37:22,147 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "You are a travel query validator. Your sole purpose is to check if the user's query contains all the minimally required information to proceed with a travel search: {{user_query}}.You must check for the presence of four key pieces of information:1. **Origin:** The starting point of the travel.2. **Destination:** The ending point of the travel.3. **Start Date:** The departure date.4. **End Date:** The return date.A **budget** is optional and not required for validation.You must respond *only* with the `IsValid` structured output format.- If all four pieces of information are present, set `is_valid` to 'True'.- If *any* of the four pieces of information are missing, set `is_valid` to 'False' and provide a `reason` explaining *exactly* what is missing.",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.IsValid'>",
+  "temperature": 0.0
+}
+2025-10-27 21:37:22,163 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:37:24,149 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a precise information extraction agent. Your task is to extract key travel details from the user's query: {{user_query}}.\nScan the user's messages and extract the following four pieces of information:\n1. `origin`: The origin city or location (e.g., 'New York', 'Medellin').\n2. `destination`: The destination city or location (e.g., 'Paris', 'Tokyo').\n3. `start_date`: The departure date, formatted as YYYY-MM-DD.\n4. `end_date`: The return date, formatted as YYYY-MM-DD.\nA **budget** is optional and not required for extraction.\nWhen you have all the information, you must output it *only* in the `QueryExtractedInfo` structured format. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'travel_agent.domain.entities.QueryExtractedInfo'>",
+  "temperature": 0.0
+}
+2025-10-27 21:37:24,153 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:37:26,509 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x000002634AB4F7D0>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:37:26,513 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:37:29,387 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x000002634AB4F7D0>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:37:29,392 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:37:32,244 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code specialist. Your goal is to find the IATA city codes for the origin and destination provided by the user: {{origin}} - {{destination}}.\n\nYou have access to a location_search tool that can find IATA codes for cities.\n\nInstructions:\n1. Use the location_search tool to search for the origin city (e.g., \"Nueva York\" -> search for \"Nueva York\")\n2. Use the location_search tool to search for the destination city (e.g., \"San Francisco\" -> search for \"San Francisco\")\n3. From the tool results, extract the most relevant IATA code for each city\n4. Present the results clearly showing the origin and destination codes\n\nExample:\n- For \"Nueva York\", you might find \"NYC\" \n- For \"San Francisco\", you might find \"SFO\"\n\nMake sure to call the tool for both cities and present the results clearly.\n\nWhen you have the results, you must continue with the next node in the workflow.\n",
+  "tools": [
+    "search_locations=<locations.application.search_locations.SearchLocations object at 0x000002634AB4F7D0>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:37:32,249 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:37:33,865 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a location code processor. Your task is to process the location codes for the origin and destination.\n1. Use the origin and destination codes from the results of the location_search tool: {{origin_code}} - {{destination_code}}.\n2. Output the results in the `LocationSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'locations.domain.location_entities.LocationSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 21:37:33,870 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:37:34,683 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x000002634ABB7B50>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:37:34,688 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:37:40,961 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\n  You are a flight booking assistant. Your task is to find flight options for the user's trip.\n  \n  You have access to a flight_search tool that can find flight options for the user's trip.\n  Instructions:\n  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.\n  2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.\n  3. Use the max price to search for flight options: {{budget}}.\n  4. Use the flight_search tool to search for flight options for the user's trip.\n  5. From the tool results, select the top 3-5 most relevant flight options.\n  6. Present the results clearly showing the flight options.\n  Do not add any conversational text.\n  \n  Make sure to call the tool for the origin, destination, start date, end date, and max price.\n",
+  "tools": [
+    "search_flights=<flights.application.search_flights.SearchFlights object at 0x000002634ABB7B50>"
+  ],
+  "structured_output": null,
+  "temperature": 0.0
+}
+2025-10-27 21:37:40,967 - google_service - INFO - get_chain:25 - Tools bound to LLM
+2025-10-27 21:37:44,025 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a flight search result processor. Your task is to process the flight search results.\n1. Use the flight_results to create the proposal: {{flight_results}}.\n2. Output the results in the `FlightSearchResult` structured format.\n3. Do not add any conversational text.\n",
+  "tools": null,
+  "structured_output": "<class 'flights.domain.flights_entities.FlightSearchResult'>",
+  "temperature": 0.0
+}
+2025-10-27 21:37:44,029 - google_service - INFO - get_chain:29 - Structured output bound to LLM
+2025-10-27 21:37:46,002 - google_service - INFO - log_function_call:39 - Calling generate_response with params: {
+  "prompt": "\nYou are a senior travel agent. Your task is to create a comprehensive, friendly, and clear travel proposal for the user.\nYou must use the following information to create the proposal:\n- Origin: {{origin}}\n- Destination: {{destination}}\n- Dates: {{start_date}} - {{end_date}}\n- Budget: {{budget}}\n- Flight Results: {{flight_results}}\n**CRITICAL INSTRUCTIONS:**\n1. Start with a friendly greeting.\n2. Clearly summarize the best flight option(s) found, including airline, price, and key times.\n3. Calculate a total estimated cost.\n4. Compare this total cost to the user's budget (if one was provided) and state if it's within, over, or under budget.\n5. If no results were found for flights, you *must* state this clearly.\n6. Conclude by presenting the proposal clearly. **Do not** ask the user for confirmation, just state the proposal.\n",
+  "tools": null,
+  "structured_output": null,
+  "temperature": 0.0
+}

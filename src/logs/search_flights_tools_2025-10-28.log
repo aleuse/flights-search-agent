@@ -1,0 +1,33 @@
+2025-10-28 19:28:37,421 - search_flights_tools - INFO - _arun:33 - Searching for flights from MIA to LAX
+2025-10-28 19:28:37,421 - search_flights_tools - INFO - log_function_call:39 - Calling SearchFlightsTools._arun with params: {
+  "origin_code": "MIA",
+  "destination_code": "LAX",
+  "start_date": "2025-10-31",
+  "end_date": "2025-11-02",
+  "max_price": null
+}
+2025-10-28 19:28:42,396 - search_flights_tools - INFO - log_function_result:44 - SearchFlightsTools._arun completed successfully. Result: {
+  "flights_count": 1
+}
+2025-10-28 19:30:31,880 - search_flights_tools - INFO - _arun:33 - Searching for flights from MIA to LAX
+2025-10-28 19:30:31,880 - search_flights_tools - INFO - log_function_call:39 - Calling SearchFlightsTools._arun with params: {
+  "origin_code": "MIA",
+  "destination_code": "LAX",
+  "start_date": "2025-10-31",
+  "end_date": "2025-11-02",
+  "max_price": null
+}
+2025-10-28 19:30:35,987 - search_flights_tools - INFO - log_function_result:44 - SearchFlightsTools._arun completed successfully. Result: {
+  "flights_count": 1
+}
+2025-10-28 19:48:23,525 - search_flights_tools - INFO - _arun:33 - Searching for flights from MIA to LAX
+2025-10-28 19:48:23,525 - search_flights_tools - INFO - log_function_call:39 - Calling SearchFlightsTools._arun with params: {
+  "origin_code": "MIA",
+  "destination_code": "LAX",
+  "start_date": "2025-10-31",
+  "end_date": "2025-11-02",
+  "max_price": null
+}
+2025-10-28 19:48:27,863 - search_flights_tools - INFO - log_function_result:44 - SearchFlightsTools._arun completed successfully. Result: {
+  "flights_count": 1
+}

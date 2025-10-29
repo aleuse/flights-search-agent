@@ -1,0 +1,22 @@
+2025-10-27 21:29:39,236 - search_flights_tools - INFO - _arun:33 - Searching for flights from MIA to LAX
+2025-10-27 21:29:39,236 - search_flights_tools - INFO - log_function_call:39 - Calling SearchFlightsTools._arun with params: {
+  "origin_code": "MIA",
+  "destination_code": "LAX",
+  "start_date": "2025-10-28",
+  "end_date": "2025-10-30",
+  "max_price": null
+}
+2025-10-27 21:29:42,771 - search_flights_tools - INFO - log_function_result:44 - SearchFlightsTools._arun completed successfully. Result: {
+  "flights_count": 1
+}
+2025-10-27 21:37:36,406 - search_flights_tools - INFO - _arun:33 - Searching for flights from MIA to NYC
+2025-10-27 21:37:36,406 - search_flights_tools - INFO - log_function_call:39 - Calling SearchFlightsTools._arun with params: {
+  "origin_code": "MIA",
+  "destination_code": "NYC",
+  "start_date": "2025-10-28",
+  "end_date": "2025-10-30",
+  "max_price": null
+}
+2025-10-27 21:37:40,957 - search_flights_tools - INFO - log_function_result:44 - SearchFlightsTools._arun completed successfully. Result: {
+  "flights_count": 1
+}

@@ -1,0 +1,107 @@
+2025-10-27 19:54:29,548 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 19:54:29,549 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 19:54:29,550 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 19:54:29,551 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 19:54:31,175 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 19:55:23,299 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 19:55:23,299 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 19:55:23,301 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 19:55:23,301 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 19:55:24,474 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 19:57:06,428 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 19:57:06,428 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 19:57:06,429 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 19:57:06,429 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 19:57:07,672 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 19:59:58,176 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 19:59:58,176 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 19:59:58,177 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 19:59:58,178 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 19:59:59,263 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:00:58,058 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:00:58,058 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:00:58,060 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:00:58,060 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:00:59,241 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:02:00,553 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:02:00,553 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:02:00,555 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:02:00,555 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:02:01,586 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:03:03,767 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:03:03,768 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:03:03,770 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:03:03,770 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:03:04,904 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:06:15,923 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:06:15,923 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:06:15,925 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:06:15,925 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:06:16,973 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:09:37,342 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:09:37,343 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:09:37,345 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:09:37,346 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:09:38,453 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:10:11,208 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:10:11,209 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:39:16,833 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:39:16,833 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:39:16,849 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:39:16,849 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:39:18,198 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:40:15,130 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:40:15,131 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:40:15,134 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:40:15,134 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:40:16,235 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:41:01,839 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:41:01,840 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:41:01,842 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:41:01,842 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:41:03,020 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:41:54,812 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:41:54,812 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:41:54,815 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:41:54,815 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:41:56,041 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:45:12,584 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:45:12,585 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:45:12,586 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:45:12,586 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:45:13,827 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:46:36,459 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:46:36,460 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:46:36,461 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:46:36,461 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:46:37,522 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 20:48:32,294 - dependency_container - INFO - __init__:22 - Initializing dependency container
+2025-10-27 20:48:32,295 - dependency_container - INFO - get_llm_service:34 - Creating GoogleLLMService
+2025-10-27 20:48:32,295 - dependency_container - INFO - get_location_tool:40 - Creating location search tool provider
+2025-10-27 20:48:32,295 - dependency_container - INFO - get_amadeus_client:27 - Creating AmadeusClient
+2025-10-27 20:48:33,271 - dependency_container - INFO - get_flight_tool:54 - Creating flight search tool provider
+2025-10-27 21:10:40,267 - dependency_container - INFO - __init__:18 - Initializing dependency container
+2025-10-27 21:10:40,268 - dependency_container - INFO - get_llm_service:28 - Creating GoogleLLMService
+2025-10-27 21:10:40,284 - dependency_container - INFO - get_location_tool:33 - Creating location search tool provider
+2025-10-27 21:10:40,284 - dependency_container - INFO - get_amadeus_client:22 - Creating AmadeusClient
+2025-10-27 21:10:41,462 - dependency_container - INFO - get_flight_tool:43 - Creating flight search tool provider
+2025-10-27 21:19:05,554 - dependency_container - INFO - __init__:18 - Initializing dependency container
+2025-10-27 21:19:05,554 - dependency_container - INFO - get_llm_service:28 - Creating GoogleLLMService
+2025-10-27 21:19:05,555 - dependency_container - INFO - get_location_tool:33 - Creating location search tool provider
+2025-10-27 21:19:05,555 - dependency_container - INFO - get_amadeus_client:22 - Creating AmadeusClient
+2025-10-27 21:19:06,926 - dependency_container - INFO - get_flight_tool:43 - Creating flight search tool provider
+2025-10-27 21:26:44,054 - dependency_container - INFO - __init__:18 - Initializing dependency container
+2025-10-27 21:26:44,055 - dependency_container - INFO - get_llm_service:28 - Creating GoogleLLMService
+2025-10-27 21:26:44,055 - dependency_container - INFO - get_location_tool:33 - Creating location search tool provider
+2025-10-27 21:26:44,056 - dependency_container - INFO - get_amadeus_client:22 - Creating AmadeusClient
+2025-10-27 21:26:45,242 - dependency_container - INFO - get_flight_tool:43 - Creating flight search tool provider
+2025-10-27 21:29:22,788 - dependency_container - INFO - __init__:18 - Initializing dependency container
+2025-10-27 21:29:22,788 - dependency_container - INFO - get_llm_service:28 - Creating GoogleLLMService
+2025-10-27 21:29:22,789 - dependency_container - INFO - get_location_tool:33 - Creating location search tool provider
+2025-10-27 21:29:22,790 - dependency_container - INFO - get_amadeus_client:22 - Creating AmadeusClient
+2025-10-27 21:29:24,112 - dependency_container - INFO - get_flight_tool:43 - Creating flight search tool provider
+2025-10-27 21:37:21,101 - dependency_container - INFO - __init__:18 - Initializing dependency container
+2025-10-27 21:37:21,102 - dependency_container - INFO - get_llm_service:28 - Creating GoogleLLMService
+2025-10-27 21:37:21,103 - dependency_container - INFO - get_location_tool:33 - Creating location search tool provider
+2025-10-27 21:37:21,103 - dependency_container - INFO - get_amadeus_client:22 - Creating AmadeusClient
+2025-10-27 21:37:22,115 - dependency_container - INFO - get_flight_tool:43 - Creating flight search tool provider
