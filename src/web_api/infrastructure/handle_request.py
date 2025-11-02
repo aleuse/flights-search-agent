@@ -57,8 +57,7 @@ class HandleRequest:
       result = APIResponse(response=response, state=output)
       
       log_function_result(self.logger, "execute", {
-        "response_length": len(response),
-        "response_preview": response[:100] + "..." if len(response) > 100 else response,
+        "response_preview":  response,
         "final_state_keys": list(output.keys()) if isinstance(output, dict) else "not_dict"
       })
       
