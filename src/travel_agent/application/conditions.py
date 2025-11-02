@@ -16,8 +16,3 @@ def has_query_extracted_info(state: ConversationState) -> bool:
   ])
   logger.debug(f"Checking if all info extracted: {has_all_info}")
   return has_all_info
-
-def should_continue_search(state: ConversationState) -> bool:
-  has_results = bool(state.get("flight_results"))
-  logger.debug(f"Checking if should continue: {has_results}")
-  return has_results
