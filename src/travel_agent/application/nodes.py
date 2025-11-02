@@ -225,8 +225,8 @@ class WorkflowNodes:
       response = await response_chain.chain.ainvoke(
         {
           "messages": state["messages"],
-          "origin": str(state.get("origin")),
-          "destination": str(state.get("destination")),
+          "origin_code": str(state.get("origin_code")),
+          "destination_code": str(state.get("destination_code")),
           "start_date": str(state.get("start_date")),
           "end_date": str(state.get("end_date")),
           "budget": str(state.get("budget"))

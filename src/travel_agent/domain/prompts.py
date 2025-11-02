@@ -72,7 +72,7 @@ FLIGHT_SEARCH_PROMPT_MESSAGE = """
   
   You have access to a flight_search tool that can find flight options for the user's trip.
   Instructions:
-  1. Use the origin and destination to search for flight options: {{origin}} - {{destination}}.
+  1. Use the origin and destination to search for flight options: {{origin_code}} - {{destination_code}}.
   2. Use the start and end dates to search for flight options: {{start_date}} - {{end_date}}.
   3. Use the max price to search for flight options: {{budget}}.
   4. Use the flight_search tool to search for flight options for the user's trip.
