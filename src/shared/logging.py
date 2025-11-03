@@ -25,7 +25,7 @@ def setup_logger(name: str, level: str = "INFO") -> logging.Logger:
   if logger.handlers:
     return logger
 
-  logs_dir = "logs"
+  logs_dir = Path("logs")
   logs_dir.mkdir(exist_ok=True)
   
   log_file = logs_dir / f"{name}_{datetime.now().strftime('%Y-%m-%d')}.log"
